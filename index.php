@@ -12,43 +12,29 @@
     <title>Úvod</title>
 
     <style>
-    .bgImage {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 1080px;
-    }
-
-    .con {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 1080px;
-    }
-
     html {
         scroll-behavior: smooth;
     }
 
-    .overlap {
-        position: relative;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 2;
+    .bgImage,
+    .con {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50em;
     }
 
-    .overlap h1{
-        background-color:red;
+    .bgImage {
+        background-attachment: fixed;
     }
 
-    .overlapBack{
-        position: absolute;
-        top: 0;
-        left: 0;
+    .filter {
         background-color: black;
-        z-index: 1;
+        z-index:1;
+    }
+
+    .content {
+        z-index:2;
     }
     </style>
 </head>
@@ -57,19 +43,26 @@
 
     <div class="container-fluid bgImage" style="background-image: url(imgs/0.jpg);"></div>
     <div class="container-fluid con" style="background-image: url(imgs/1.jpg);">
-        <div class="overlap overlapBack" data-center-top="opacity: 0;" data-top="opacity: .7;"></div>
-        <div class="p-5 text-center text-light overlap" data-0="opacity: 0;" data-500="opacity: 1;">
-            <h1>Hello, world!</h1>
-            <hr class="bg-white border-5 border-top border-white">
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit, ligula sit amet pharetra
-                semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque. Duis viverra diam
-                non justo. Nulla non arcu lacinia neque faucibus fringilla. Maecenas fermentum, sem in pharetra
-                pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Aenean vel massa quis
-                mauris vehicula lacinia. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Duis
-                condimentum augue id magna semper rutrum. Morbi imperdiet, mauris ac auctor dictum, nisl ligula
-                egestas nulla, et sollicitudin sem purus in lacus.
-            </p>
+        <div class="filter h-100 p-5 row align-items-center justify-content-center" data-center-top="opacity: 0;" data-top="opacity: .7;">
+            <div class="col text-center content" data-0="opacity: 0" data-top="opacity: 1">
+                <h1>Hello, world!</h1>
+                <hr class="bg-white border-5 border-top border-white">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit, ligula sit amet
+                    pharetra
+                    semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque. Duis
+                    viverra
+                    diam
+                    non justo. Nulla non arcu lacinia neque faucibus fringilla. Maecenas fermentum, sem in
+                    pharetra
+                    pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Aenean vel massa
+                    quis
+                    mauris vehicula lacinia. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Duis
+                    condimentum augue id magna semper rutrum. Morbi imperdiet, mauris ac auctor dictum, nisl
+                    ligula
+                    egestas nulla, et sollicitudin sem purus in lacus.
+                </p>
+            </div>
         </div>
     </div>
 
