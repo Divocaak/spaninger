@@ -21,8 +21,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 50em;
+        height: 100vh;
     }
+
 
     .bgImage {
         background-attachment: fixed;
@@ -37,6 +38,7 @@
     #topShadow {
         -webkit-box-shadow: 0px 0px 15px 0px #000000;
         box-shadow: 0px 0px 15px 0px #000000;
+        margin-top:800px;
     }
 
     .filter {
@@ -56,10 +58,31 @@
         grid-row-end: 3;
         z-index: 2;
     }
+
+    figure {
+        margin: 0;
+        position: relative;
+    }
+
+    video {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .bgVidWrapper {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: auto;
+        width: auto;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -9999;
+    }
     </style>
 </head>
 
-<body>
+<body style="background-color:black;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-0="opacity: 0;" data-250="opacity: .9;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">txt</a>
@@ -76,8 +99,14 @@
         </div>
     </nav>
 
-    <div class="container-fluid bgImage" style="background-image: url(imgs/0.jpg);"></div>
-    <div class="container-fluid con" id="topShadow" style="background-image: url(imgs/1.jpg);">
+    <div class="bgVidWrapper">
+            <figure>
+            <video loop="loop" muted="muted" autoplay="autoplay">
+                    <source src="imgs/vid.mp4" />
+                </video>
+            </figure>
+    </div>
+    <div class="container-fluid con" id="topShadow" style="background-image: url(imgs/0.jpg);">
         <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;" data-center-bottom="opacity: 0;">
         </div>
         <div class="text-center content text-light" data--100-bottom="opacity: 0;" data-center="opacity: 1;"
@@ -105,6 +134,7 @@
             </p>
         </div>
     </div>
+    <div class="container-fluid bgImage" style="background-image: url(imgs/2.jpg);"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
