@@ -21,7 +21,25 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 100vh
+    }
+
+    @media screen and (max-width: 568px) {
+        #topShadow {
+            margin-top: 182px;
+        }
+    }
+
+    @media screen and (max-width: 1366px) {
+        #topShadow {
+            margin-top: 572px;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+        #topShadow {
+            margin-top: 800px;
+        }
     }
 
 
@@ -38,7 +56,6 @@
     #topShadow {
         -webkit-box-shadow: 0px 0px 15px 0px #000000;
         box-shadow: 0px 0px 15px 0px #000000;
-        margin-top:800px;
     }
 
     .filter {
@@ -100,11 +117,11 @@
     </nav>
 
     <div class="bgVidWrapper">
-            <figure>
+        <figure>
             <video loop="loop" muted="muted" autoplay="autoplay">
-                    <source src="imgs/vid.mp4" />
-                </video>
-            </figure>
+                <source src="imgs/vid.mp4" />
+            </video>
+        </figure>
     </div>
     <div class="container-fluid con" id="topShadow" style="background-image: url(imgs/0.jpg);">
         <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;" data-center-bottom="opacity: 0;">
