@@ -96,6 +96,21 @@
         min-width: 100%;
         z-index: -9999;
     }
+
+    .link {
+        text-decoration: none;
+        padding: 5px;
+        transition: .5s ease-in-out;
+
+        color: #FFD700;
+        box-shadow: inset 0 0 0 0 #FFD700;    
+    }
+
+    .link:hover {
+        color: black;
+        box-shadow: inset 100px 0 0 0 #FFD700;
+    }
+
     </style>
 </head>
 
@@ -135,6 +150,7 @@
                 pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque. Duis
                 viverra diam non justo.
             </p>
+            <a href="#" class="link-primary link">link</a>
         </div>
     </div>
     <div class="container-fluid con" id="href2" style="background-image: url(imgs/1.jpg);">
@@ -149,6 +165,7 @@
                 pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque. Duis
                 viverra diam non justo.
             </p>
+            <a href="#" class="link-primary link">link</a>
         </div>
     </div>
     <div class="container-fluid bgImage" style="background-image: url(imgs/2.jpg);"></div>
