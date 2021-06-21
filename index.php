@@ -150,7 +150,7 @@
                 pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque. Duis
                 viverra diam non justo.
             </p>
-            <a href="#" class="link-primary link">link</a>
+            <a href="work.php" class="link-primary link">work?</a>
         </div>
     </div>
     <div class="container-fluid con" id="href2" style="background-image: url(imgs/1.jpg);">
