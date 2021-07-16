@@ -21,7 +21,25 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 100vh
+    }
+
+    @media screen and (max-width: 568px) {
+        #topShadow {
+            margin-top: 182px;
+        }
+    }
+
+    @media screen and (max-width: 1366px) {
+        #topShadow {
+            margin-top: 572px;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+        #topShadow {
+            margin-top: 800px;
+        }
     }
 
 
@@ -38,7 +56,6 @@
     #topShadow {
         -webkit-box-shadow: 0px 0px 15px 0px #000000;
         box-shadow: 0px 0px 15px 0px #000000;
-        margin-top:800px;
     }
 
     .filter {
@@ -79,6 +96,21 @@
         min-width: 100%;
         z-index: -9999;
     }
+
+    .link {
+        text-decoration: none;
+        padding: 5px;
+        transition: .5s ease-in-out;
+
+        color: #FFD700;
+        box-shadow: inset 0 0 0 0 #FFD700;    
+    }
+
+    .link:hover {
+        color: black;
+        box-shadow: inset 100px 0 0 0 #FFD700;
+    }
+
     </style>
 </head>
 
@@ -100,11 +132,11 @@
     </nav>
 
     <div class="bgVidWrapper">
-            <figure>
+        <figure>
             <video loop="loop" muted="muted" autoplay="autoplay">
-                    <source src="imgs/vid.mp4" />
-                </video>
-            </figure>
+                <source src="imgs/vid.mp4" />
+            </video>
+        </figure>
     </div>
     <div class="container-fluid con" id="topShadow" style="background-image: url(imgs/0.jpg);">
         <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;" data-center-bottom="opacity: 0;">
@@ -118,6 +150,7 @@
                 pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque. Duis
                 viverra diam non justo.
             </p>
+            <a href="work.php" class="link-primary link">work?</a>
         </div>
     </div>
     <div class="container-fluid con" id="href2" style="background-image: url(imgs/1.jpg);">
@@ -132,6 +165,7 @@
                 pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque. Duis
                 viverra diam non justo.
             </p>
+            <a href="#" class="link-primary link">link</a>
         </div>
     </div>
     <div class="container-fluid bgImage" style="background-image: url(imgs/2.jpg);"></div>
