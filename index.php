@@ -11,125 +11,12 @@
 
     <title>Úvod</title>
 
-    <style>
-    html {
-        scroll-behavior: smooth;
-    }
-
-    .bgImage,
-    .con {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 75vh
-    }
-
-    @media screen and (max-width: 568px) {
-        .bgVidWrapper {
-            display: none;
-        }
-    }
-
-    @media screen and (max-width: 1366px) and (min-width: 569px) {
-        #topShadow {
-            margin-top: 42vh;
-        }
-    }
-
-    @media screen and (min-width: 1366px) {
-        #topShadow {
-            margin-top: 100vh;
-        }
-    }
-
-
-    .bgImage {
-        background-attachment: fixed;
-    }
-
-    .con {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    #topShadow {
-        -webkit-box-shadow: 0px 0px 15px 0px #000000;
-        box-shadow: 0px 0px 15px 0px #000000;
-    }
-
-    .filter {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 4;
-        background-color: black;
-        z-index: 1;
-        margin: 0px -12px 0px -12px;
-    }
-
-    .content-grid-center {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
-    .content-grid-wide {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
-    .content {
-        z-index: 2;
-    }
-
-    .content-img {
-        -webkit-box-shadow: 0px 0px 15px 0px #000000;
-        box-shadow: 0px 0px 15px 0px #000000;
-    }
-
-    figure {
-        margin: 0;
-        position: relative;
-    }
-
-    video {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .bgVidWrapper {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        height: auto;
-        width: auto;
-        min-height: 100%;
-        min-width: 100%;
-        z-index: -9999;
-    }
-
-    .link {
-        text-decoration: none;
-        padding: 5px;
-        transition: .5s ease-in-out;
-
-        color: #FFD700;
-        box-shadow: inset 0 0 0 0 #FFD700;
-    }
-
-    .link:hover {
-        color: black;
-        box-shadow: inset 100px 0 0 0 #FFD700;
-    }
-    </style>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body style="background-color:black;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3" data-0="opacity: 0;" data-250="opacity: .9;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3" data-0="opacity: 0;"
+        data-250="opacity: .9;">
         <div class="container-fluid">
             <a class="navbar-brand text-uppercase" href="#">txt</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -144,8 +31,8 @@
             </div>
         </div>
     </nav>
-
-    <div class="bgVidWrapper">
+    
+    <div class="container-fluid bgVidWrapper">
         <figure>
             <video loop="loop" muted="muted" autoplay="autoplay">
                 <source src="imgs/vid.mp4" />
@@ -204,14 +91,11 @@
                 <div class="col-6 p-5">
                     <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                         src="https://www.openstreetmap.org/export/embed.html?bbox=14.472690224647524%2C48.955921256492026%2C14.476230740547182%2C48.957492261620075&amp;layer=mapnik&amp;marker=48.95670620002507%2C14.474460399999998"
-                        style="height:50vh; width: 40vw"></iframe><br /><small><a
-                            href="https://www.openstreetmap.org/?mlat=48.95671&amp;mlon=14.47446#map=19/48.95671/14.47446">Zobrazit
-                            větší mapu</a></small>
+                        style="height:50vh; width: 40vw"></iframe>
                 </div>
             </div>
         </div>
     </div>
-
 
     <div class="container-fluid bgImage" style="background-image: url(imgs/2.jpg);"></div>
 
@@ -257,9 +141,15 @@
                 <div class="col-6 p-5">
                     <img src="imgs/1.jpg" class="img-fluid content-img">
                 </div>
-            </div>
+            </div>  
         </div>
     </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
