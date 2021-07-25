@@ -105,14 +105,42 @@
                     <img src="imgs/0.jpg" class="img-fluid content-img">
                 </div>
                 <div class="col-6 p-5">
-                    <h1>Kontakt</h1>
+                    <h1>Pohledávky?</h1>
                     <hr class="bg-white border-5 border-top border-white">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit, ligula sit amet
-                        pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque.
-                        Duis
-                        viverra diam non justo.
-                    </p>
+                    <form>
+                        <div class="row">
+                            <div class=" col-6">
+                                <input type="text" class="form-control customInput" id="fName" placeholder="Jméno">
+                            </div>
+                            <div class=" col-6">
+                                <input type="text" class="form-control customInput" id="lName" placeholder="Příjmení">
+                            </div>
+                            <div class="mt-2 col-6">
+                                <input type="email" class="form-control customInput" id="email" placeholder="E-mail">
+                            </div>
+                            <div class="mt-2 col-6">
+                                <input type="tel" class="form-control customInput" id="phone" placeholder="Tel. číslo">
+                            </div>
+                            <div class="mt-2">
+                                <label for="date" class="form-label">Požadovaný datum zahájení</label>
+                                <input type="date" class="form-control customInput" id="date">
+                            </div>
+                            <div class="mt-2">
+                                <textarea class="form-control customInput" id="text"
+                                    placeholder="Rozměry, speciální požadavky, ..."></textarea>
+                            </div>
+                            <div class="mt-1">
+                                <label for="files" class="form-label">Přílohy (výkresy, fotky)</label>
+                                <input type="file" class="form-control customInput" id="files">
+                            </div>
+                            <div class="mt-2 col-6">
+                                <label class="form-check-label" for="check">Souhlasím se zpracováním zadaných
+                                    údajů</label>
+                                <input type="checkbox" class="form-check-input mx-2 customInput" id="check">
+                            </div>
+                            <button type="submit" class="btn btn-primary col-6 mt-2 customInput">Odeslat</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -123,21 +151,40 @@
         </div>
         <div class="text-center content content-grid-wide text-light" data--100-bottom="opacity: 0;"
             data-center="opacity: 1;">
-            <div class="row">
-                <div class="col-6 p-5">
-                    <h1>Kontakt</h1>
-                    <hr class="bg-white border-5 border-top border-white">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit, ligula sit amet
-                        pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque.
-                        Duis
-                        viverra diam non justo.
-                    </p>
+            <h1>Kontakt</h1>
+            <hr class="bg-white border-5 border-top border-white">
+            <div id="carouselExampleIndicators" class="carousel slide w-50" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="col-6 p-5">
-                    <img src="imgs/1.jpg" class="img-fluid content-img">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgs/0.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/1.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/2.jpg" class="d-block w-100">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            <a href="#" class="link">Vstoupit do galerie</a>
         </div>
     </div>
 
@@ -176,7 +223,7 @@
             </div>
         </div>
     </footer>
-    <div class="wtf"></div>
+    <div class="videoOver"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
