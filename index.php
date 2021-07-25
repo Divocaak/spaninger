@@ -32,7 +32,7 @@
         </div>
     </nav>
 
-    <video id="videoBG" poster="poster.JPG" autoplay muted loop>
+    <video id="videoBG" autoplay muted loop>
         <source src="imgs/vid.mp4" type="video/mp4">
     </video>
 
@@ -81,7 +81,7 @@
                         <b>Bankovní spojení</b> - NÁZEV<br>
                         <b>BANKA číslo b.ú.</b>: 1122334455/1234,<br>
                         <b>IBAN</b>: KÓD<br>
-                        <b>SWIFT/BIC</b>: KÓD<br>
+                        <b>SWIFT/BIC</b>: KÓD
                     </p>
                 </div>
                 <div class="col-6 p-5">
@@ -176,6 +176,7 @@
             </div>
         </div>
     </footer>
+    <div class="wtf"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
