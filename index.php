@@ -31,7 +31,7 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="container-fluid bgVidWrapper">
         <figure>
             <video loop="loop" muted="muted" autoplay="autoplay">
@@ -45,14 +45,14 @@
         </div>
         <div class="text-center content content-grid-center text-light" data--100-bottom="opacity: 0;"
             data-center="opacity: 1;">
-            <h1>text 1</h1>
+            <h1>O nás?</h1>
             <hr class="bg-white border-5 border-top border-white">
             <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit, ligula sit amet
                 pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque. Duis
                 viverra diam non justo.
             </p>
-            <a href="work.php" class="link-primary link">work?</a>
+            <a href="work.php" class="link-primary link">about?</a>
         </div>
     </div>
 
@@ -141,13 +141,43 @@
                 <div class="col-6 p-5">
                     <img src="imgs/1.jpg" class="img-fluid content-img">
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
 
-    <footer class="footer mt-auto py-3 bg-light">
+    <footer class="footer mt-auto py-5 bg-dark text-light">
         <div class="container">
-            <span class="text-muted">Place sticky footer content here.</span>
+            <div class="row">
+                <div class="col-4">
+                    <b>Sídlo firmy</b> – NÁZEV<br>
+                    ADRESA<br>
+                    ADRESA<br>
+                    PSČ<br>
+                    <br>
+                    <b>Fakturační adresa</b> – NÁZEV<br>
+                    ADRESA<br>
+                    ADRESA<br>
+                    PSČ<br>
+                    <br>
+                    <b>IČ</b>: 12345678<br>
+                    <b>DIČ</b>: CZ12345678<br>
+                    <br>
+                    <b>Email</b>: MAIL<br>
+                    <b>Kontaktní tel.</b>: 123 456 789<br>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="#" class="link-primary link">panel link</a><br>
+                    <a href="#" class="link-primary link">panel link</a><br>
+                    <a href="#" class="link-primary link">panel link</a><br>
+                    <a href="#" class="link-primary link">panel link</a><br>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="#" class="link-primary link">panel link</a><br>
+                    <a href="#" class="link-primary link">panel link</a><br>
+                    <a href="#" class="link-primary link">panel link</a><br>
+                    <a href="#" class="link-primary link">panel link</a><br>
+                </div>
+            </div>
         </div>
     </footer>
 
