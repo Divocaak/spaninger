@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
-<body style="background-color:black;">
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3" data-0="opacity: 0;"
         data-250="opacity: .9;">
         <div class="container-fluid">
@@ -25,7 +25,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link text-uppercase" href="#topShadow">btn1</a>
+                    <a class="nav-link text-uppercase" href="#shadow">btn1</a>
                     <a class="nav-link text-uppercase" href="#href2">btn2</a>
                 </div>
             </div>
@@ -40,7 +40,7 @@
         </figure>
     </div>
 
-    <div class="container-fluid con" id="topShadow" style="background-image: url(imgs/0.jpg);">
+    <div class="container-fluid con shadow" id="panelFirst" style="background-image: url(imgs/0.jpg);">
         <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;">
         </div>
         <div class="text-center content content-grid-center text-light" data--100-bottom="opacity: 0;"
@@ -56,7 +56,7 @@
         </div>
     </div>
 
-    <div class="container-fluid con" id="href2" style="background-image: url(imgs/1.jpg);">
+    <div class="container-fluid con shadow" id="href2" style="background-image: url(imgs/1.jpg);">
         <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;">
         </div>
         <div class="text-center content content-grid-wide text-light" data--100-bottom="opacity: 1;"
@@ -99,7 +99,7 @@
 
     <div class="container-fluid bgImage" style="background-image: url(imgs/2.jpg);"></div>
 
-    <div class="container-fluid con" id="href3" style="background-image: url(imgs/0.jpg);">
+    <div class="container-fluid con shadow" id="href3" style="background-image: url(imgs/0.jpg);">
         <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;">
         </div>
         <div class="text-center content content-grid-wide text-light" data--100-bottom="opacity: 0;"
@@ -145,7 +145,7 @@
         </div>
     </div>
 
-    <footer class="footer mt-auto py-5 bg-dark text-light">
+    <footer class="footer mt-auto py-5 bg-dark text-light" id="footerCustom">
         <div class="container">
             <div class="row">
                 <div class="col-4">

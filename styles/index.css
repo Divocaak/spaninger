@@ -39,10 +39,13 @@ html {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-#topShadow {
+#panelFirst {
+    margin-top: 55vh;
+}
+
+.shadow {
     -webkit-box-shadow: 0px 0px 15px 0px #000000;
     box-shadow: 0px 0px 15px 0px #000000;
-    padding-top: -55vh;
 }
 
 .filter {
@@ -89,8 +92,9 @@ video {
 }
 
 .bgVidWrapper {
-    position: static;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: -9999;
 }
 
@@ -105,4 +109,9 @@ video {
 .link:hover {
     color: black;
     box-shadow: inset 100px 0 0 0 #FFD700;
+}
+
+#footerCustom {
+    background-color: red;
+    margin-bottom: 500px;
 }
