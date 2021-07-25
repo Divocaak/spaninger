@@ -32,13 +32,9 @@
         </div>
     </nav>
 
-    <div class="container-fluid bgVidWrapper">
-        <figure>
-            <video loop="loop" muted="muted" autoplay="autoplay">
-                <source src="imgs/vid.mp4" />
-            </video>
-        </figure>
-    </div>
+    <video id="videoBG" poster="poster.JPG" autoplay muted loop>
+        <source src="imgs/vid.mp4" type="video/mp4">
+    </video>
 
     <div class="container-fluid con shadow" id="panelFirst" style="background-image: url(imgs/0.jpg);">
         <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;">
@@ -145,7 +141,7 @@
         </div>
     </div>
 
-    <footer class="footer mt-auto py-5 bg-dark text-light" id="footerCustom">
+    <footer class="footer mt-auto py-5 bg-dark text-light">
         <div class="container">
             <div class="row">
                 <div class="col-4">

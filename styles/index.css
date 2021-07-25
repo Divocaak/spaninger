@@ -111,7 +111,7 @@ video {
     box-shadow: inset 100px 0 0 0 #FFD700;
 }
 
-#footerCustom {
-    background-color: red;
-    margin-bottom: 500px;
+#videoBG {
+    position: fixed;
+    z-index: -1;
 }
