@@ -32,13 +32,9 @@
         </div>
     </nav>
 
-    <div class="container-fluid bgVidWrapper">
-        <figure>
-            <video loop="loop" muted="muted" autoplay="autoplay">
-                <source src="imgs/vid.mp4" />
-            </video>
-        </figure>
-    </div>
+    <video id="videoBG" autoplay muted loop>
+        <source src="imgs/vid.mp4" type="video/mp4">
+    </video>
 
     <div class="container-fluid con shadow" id="panelFirst" style="background-image: url(imgs/0.jpg);">
         <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;">
@@ -85,7 +81,7 @@
                         <b>Bankovní spojení</b> - NÁZEV<br>
                         <b>BANKA číslo b.ú.</b>: 1122334455/1234,<br>
                         <b>IBAN</b>: KÓD<br>
-                        <b>SWIFT/BIC</b>: KÓD<br>
+                        <b>SWIFT/BIC</b>: KÓD
                     </p>
                 </div>
                 <div class="col-6 p-5">
@@ -145,7 +141,7 @@
         </div>
     </div>
 
-    <footer class="footer mt-auto py-5 bg-dark text-light" id="footerCustom">
+    <footer class="footer mt-auto py-5 bg-dark text-light">
         <div class="container">
             <div class="row">
                 <div class="col-4">
@@ -180,6 +176,7 @@
             </div>
         </div>
     </footer>
+    <div class="wtf"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
