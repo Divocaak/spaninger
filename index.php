@@ -9,9 +9,16 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
     <title>Úvod</title>
 
     <link rel="stylesheet" href="styles/index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -25,8 +32,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link text-uppercase" href="#shadow">btn1</a>
-                    <a class="nav-link text-uppercase" href="#href2">btn2</a>
+                    <a class="nav-link text-uppercase" href="#panelFirst">o nás</a>
+                    <a class="nav-link text-uppercase" href="#href2">kontakt</a>
+                    <a class="nav-link text-uppercase" href="#href3">pohledávky</a>
+                    <a class="nav-link text-uppercase" href="#href4">galerie</a>
                 </div>
             </div>
         </div>
@@ -146,45 +155,37 @@
         </div>
     </div>
 
-    <div class="container-fluid con" id="href3" style="background-image: url(imgs/1.jpg);">
+    <div class="container-fluid con" id="href4" style="background-image: url(imgs/1.jpg);">
         <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;">
         </div>
         <div class="text-center content content-grid-wide text-light" data--100-bottom="opacity: 0;"
             data-center="opacity: 1;">
-            <h1>Kontakt</h1>
+            <h1>Galerie</h1>
             <hr class="bg-white border-5 border-top border-white">
-            <div id="carouselExampleIndicators" class="carousel slide w-50" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+            <div class="d-flex justify-content-center">
+                <div id="carouselExampleControls" class="carousel slide w-50" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/0.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/1.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/2.jpg" class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/0.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/1.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/2.jpg" class="d-block w-100">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-            <a href="#" class="link">Vstoupit do galerie</a>
+            <a href="gallery.php" class="link">Vstoupit do galerie</a>
         </div>
     </div>
 
