@@ -22,20 +22,22 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3" data-0="opacity: 0;"
-        data-250="opacity: .9;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3"
+        style="opacity: .9;">
         <div class="container-fluid">
-            <a class="navbar-brand text-uppercase" href="#">txt</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        <a class="navbar-brand" href="#">
+      <img src="imgs/log.png" alt="" width="90" height="64" class="d-inline-block align-text-top">
+      
+    </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link text-uppercase" href="#panelFirst">o nás</a>
-                    <a class="nav-link text-uppercase" href="#href2">kontakt</a>
-                    <a class="nav-link text-uppercase" href="#href3">pohledávky</a>
-                    <a class="nav-link text-uppercase" href="#href4">galerie</a>
+                <div class="navbar-nav align-end">
+                        <a class="nav-link text-uppercase" href="#panelFirst">o nás</a>
+                        <a class="nav-link text-uppercase" href="#href2">kontakt</a>
+                        <a class="nav-link text-uppercase" href="#href3">pohledávky</a>
+                        <a class="nav-link text-uppercase" href="#href4">galerie</a>
                 </div>
             </div>
         </div>
