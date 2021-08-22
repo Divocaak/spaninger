@@ -15,13 +15,16 @@
     <title>Galerie</title>
 
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/gallery.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
 </head>
 
-<body style="overflow-x:hidden;" class="bg-dark text-light">
+<body>
+    <img src="imgs/0.jpg" id="bg"/>
+
     <div class="modal fade" id="galModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -47,8 +50,8 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-3 bg-dark ps-4">
+    <div class="row transBack text-light">
+        <div class="col-3 ps-4">
             <h3 class="display-3">Galerie</h3>
             <ul class="list-unstyled">
                 <li class="mb-4"><a href="index.php" class="text-decoration-none link"><i class="bi bi-arrow-left-square"></i> Zpět</a></li>
@@ -66,7 +69,7 @@
                     foreach (glob("imgs/gal/*") as $key=>$folder) {
                       echo "<h5 class='display-5' id='" . $key . "'>" . $catNames[$key] . "</h5>";
                       foreach (glob($folder . "/*") as $img) {
-                        echo '<div class="card m-1 p-1 galCard" style="width: 18rem;" data-selected-imgs="' . $img . '" data-selected-imgs-count="' . count(glob($img . "/*")) . '">
+                        echo '<div class="card m-1 p-1 galCard bg-dark" style="width: 18rem;" data-selected-imgs="' . $img . '" data-selected-imgs-count="' . count(glob($img . "/*")) . '">
                                 <img src="' . $img . '/0.jpg" class="card-img-top">
                                 <div class="card-body">
                                     <p class="card-text">info</p>

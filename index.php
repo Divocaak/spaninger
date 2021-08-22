@@ -33,7 +33,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav align-end">
+                <div class="navbar-nav ms-auto">
                         <a class="nav-link text-uppercase" href="#panelFirst">o nás</a>
                         <a class="nav-link text-uppercase" href="#href2">kontakt</a>
                         <a class="nav-link text-uppercase" href="#href3">pohledávky</a>
