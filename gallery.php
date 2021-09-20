@@ -23,27 +23,37 @@
 </head>
 
 <body>
-    <img src="imgs/0.jpg" id="bg"/>
+    <img src="imgs/0.jpg" id="bg" />
 
     <div class="modal fade" id="galModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Nadpis</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">NADPIS?</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner" id="galModalContent">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="row" id="galGallery">
+                                <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner" id="galCarousel">
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div> -->
+                            </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        </button>
+                        <div class="col-6">
+                            <h2 id="galName"></h2>
+                            <p id="galText"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,7 +64,8 @@
         <div class="col-3 ps-4">
             <h3 class="display-3">Galerie</h3>
             <ul class="list-unstyled">
-                <li class="mb-4"><a href="index.php" class="text-decoration-none link"><i class="bi bi-arrow-left-square"></i> Zpět</a></li>
+                <li class="mb-4"><a href="index.php" class="text-decoration-none link"><i
+                            class="bi bi-arrow-left-square"></i> Zpět</a></li>
                 <?php
                     $catNames = ["Zahrady", "Kuchyně"];
                     foreach($catNames as $key=>$link){
@@ -69,10 +80,23 @@
                     foreach (glob("imgs/gal/*") as $key=>$folder) {
                       echo "<h5 class='display-5' id='" . $key . "'>" . $catNames[$key] . "</h5>";
                       foreach (glob($folder . "/*") as $img) {
-                        echo '<div class="card m-1 p-1 galCard bg-dark" style="width: 18rem;" data-selected-imgs="' . $img . '" data-selected-imgs-count="' . count(glob($img . "/*")) . '">
+                          $path = $img . "/data.txt";
+                          $data = fopen($path, "r");
+                          if($data != null){
+                              $dataContent = fread($data, filesize($path));
+                              $galName = substr($dataContent, strpos($dataContent, "<galName>") + 9, strpos($dataContent, "</galName>") - 9);
+                              $galText = substr($dataContent, strpos($dataContent, "<galText>") + 9, strpos($dataContent, "</galText>") - 9);
+                              fclose($data);
+                          } 
+
+                        echo '<div class="card m-1 p-1 galCard bg-dark" style="width: 18rem;" 
+                                data-selected-name="' . $galName . '" 
+                                data-selected-text="' . $galText . '" 
+                                data-selected-imgs="' . $img . '" 
+                                data-selected-imgs-count="' . (count(glob($img . "/*")) - 1) . '">
                                 <img src="' . $img . '/0.jpg" class="card-img-top">
                                 <div class="card-body">
-                                    <p class="card-text">info</p>
+                                    <p class="card-text">' . $galName . '</p>
                                     <button type="button" class="btn btn-primary stretched-link" data-bs-toggle="modal"
                                         data-bs-target="#galModal">
                                     Zobrazit více
@@ -96,11 +120,16 @@
     <script>
     $(function() {
         $(".galCard").click(function() {
-            $("#galModalContent").empty();
+            $("#galGallery").empty();
+            $("#galName").text($(this).data("selectedName"));
+            $("#galText").text($(this).data("selectedText"));
             for (let i = 0; i < $(this).data("selectedImgsCount"); i++) {
-                $('#galModalContent').append('<div class="carousel-item' + ((i == 0) ? ' active' : '') +
-                    '"><img class="d-block w-100" src="' + $(this).data("selectedImgs") + '/' + i +
+                $('#galGallery').append('<div class="col-6 p-2"><img class="img-fluid" src="' + $(this)
+                    .data("selectedImgs") + '/' + i +
                     '.jpg"/></div>');
+                /* $('#galCarousel').append('<div class="carousel-item' + ((i == 0) ? ' active' : '') +
+                    '"><img class="d-block w-100" src="' + $(this).data("selectedImgs") + '/' + i +
+                    '.jpg"/></div>'); */
             }
         });
     });
