@@ -1,0 +1,2 @@
+<galName>Jméno galerie 1</galName>
+<galText>Krátký popis galerie 1</galText>

@@ -22,22 +22,22 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3"
-        style="opacity: .9;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3" style="opacity: .9;">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-      <img src="imgs/log.png" alt="" width="90" height="64" class="d-inline-block align-text-top">
-      
-    </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/log.png" alt="" width="90" height="64" class="d-inline-block align-text-top">
+
+            </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                        <a class="nav-link text-uppercase" href="#panelFirst">o nás</a>
-                        <a class="nav-link text-uppercase" href="#href2">kontakt</a>
-                        <a class="nav-link text-uppercase" href="#href3">pohledávky</a>
-                        <a class="nav-link text-uppercase" href="#href4">galerie</a>
+                    <a class="nav-link text-uppercase" href="#panelFirst">o nás</a>
+                    <a class="nav-link text-uppercase" href="#href2">kontakt</a>
+                    <a class="nav-link text-uppercase" href="#href3">pohledávky</a>
+                    <a class="nav-link text-uppercase" href="#href4">galerie</a>
                 </div>
             </div>
         </div>
@@ -194,6 +194,9 @@
     <footer class="footer mt-auto py-5 bg-dark text-light">
         <div class="container">
             <div class="row">
+                <div class="col-4 text-center">
+                    <img src="imgs/log.png" class="d-inline-block">
+                </div>
                 <div class="col-4">
                     <b>Sídlo firmy</b> – NÁZEV<br>
                     ADRESA<br>
@@ -210,12 +213,6 @@
                     <br>
                     <b>Email</b>: MAIL<br>
                     <b>Kontaktní tel.</b>: 123 456 789<br>
-                </div>
-                <div class="col-4 text-center">
-                    <a href="#" class="link-primary link">panel link</a><br>
-                    <a href="#" class="link-primary link">panel link</a><br>
-                    <a href="#" class="link-primary link">panel link</a><br>
-                    <a href="#" class="link-primary link">panel link</a><br>
                 </div>
                 <div class="col-4 text-center">
                     <a href="#" class="link-primary link">panel link</a><br>
