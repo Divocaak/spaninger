@@ -36,24 +36,35 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="row" id="galGallery">
-                                <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner" id="galCarousel">
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                </button>
-                            </div> -->
                             </div>
                         </div>
                         <div class="col-6">
                             <h2 id="galName"></h2>
                             <p id="galText"></p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="carouselModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" id="galCarousel">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -121,16 +132,21 @@
     $(function() {
         $(".galCard").click(function() {
             $("#galGallery").empty();
+            $("#galCarousel").empty();
             $("#galName").text($(this).data("selectedName"));
             $("#galText").text($(this).data("selectedText"));
             for (let i = 0; i < $(this).data("selectedImgsCount"); i++) {
-                $('#galGallery').append('<div class="col-6 p-2"><img class="img-fluid" src="' + $(this)
-                    .data("selectedImgs") + '/' + i +
-                    '.jpg"/></div>');
-                /* $('#galCarousel').append('<div class="carousel-item' + ((i == 0) ? ' active' : '') +
-                    '"><img class="d-block w-100" src="' + $(this).data("selectedImgs") + '/' + i +
-                    '.jpg"/></div>'); */
+                var path = $(this).data("selectedImgs") + '/' + i + '.jpg';
+                $('#galGallery').append(
+                    '<div class="col-6 p-2 btn carouselTrigger" data-carousel-start="' + i
+                    + '" data-bs-toggle="modal" data-bs-target="#carouselModal"><img class="img-fluid" src="' + path + '"/></div>');
+                $('#galCarousel').append('<div class="carousel-item' + ((i == 0) ? ' active' : '') +
+                    '"><img class="d-block w-100" src="' + path + '"/></div>');
             }
+        });
+
+        $(document).on("click", "div.carouselTrigger" , function() {
+            $('#carouselExampleControls').carousel(parseInt($(this).data("carouselStart")));
         });
     });
     </script>
