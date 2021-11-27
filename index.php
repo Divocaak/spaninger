@@ -45,8 +45,9 @@
     <div class="container p-0 m-0">
         <img src="imgs/0.jpg" class="img-fluid w-100 containerContent"/>
         <div class="shape"></div>
-        <div class="containerContent shapeMask"></div>
+        <div class="shape-sm"></div>
         <div class="containerContent containerText text-light">
+            <div class="textMask">asdads</div>
             <h2>O nás</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris elementum mauris vitae tortor.
                 Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Curabitur vitae diam non enim vestibulum interdum.
