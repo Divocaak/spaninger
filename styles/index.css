@@ -1,5 +1,6 @@
 body {
-    overflow: hidden
+    overflow: hidden;
+    background-color: black;
 }
 
 .container {
@@ -40,4 +41,12 @@ body {
     float: right;
     shape-outside: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.menuBtn {
+    cursor: pointer;
+}
+
+.content {
+    opacity: 0;
 }
