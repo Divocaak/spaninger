@@ -5,236 +5,138 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <title>Úvod</title>
 
     <link rel="stylesheet" href="styles/index.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3" style="opacity: .9;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="opacity: .9;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="imgs/log.png" alt="" width="90" height="64" class="d-inline-block align-text-top">
 
-            </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
+            </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link text-uppercase" href="#panelFirst">o nás</a>
-                    <a class="nav-link text-uppercase" href="#href2">kontakt</a>
-                    <a class="nav-link text-uppercase" href="#href3">pohledávky</a>
-                    <a class="nav-link text-uppercase" href="#href4">galerie</a>
+                    <a class="nav-link text-uppercase menuBtn" id="menu0">o nás</a>
+                    <a class="nav-link text-uppercase menuBtn" id="menu1">Služby</a>
+                    <a class="nav-link text-uppercase menuBtn" id="menu2">Reference</a>
+                    <a class="nav-link text-uppercase menuBtn" id="menu3">Kontakt</a>
                 </div>
             </div>
         </div>
     </nav>
-
-    <video id="videoBG" autoplay muted loop>
-        <source src="imgs/vid.mp4" type="video/mp4">
-    </video>
-
-    <div class="container-fluid con shadow" id="panelFirst" style="background-image: url(imgs/0.jpg);">
-        <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;">
-        </div>
-        <div class="text-center content content-grid-center text-light" data--100-bottom="opacity: 0;"
-            data-center="opacity: 1;">
-            <h1>O nás?</h1>
-            <hr class="bg-white border-5 border-top border-white">
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit, ligula sit amet
-                pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque. Duis
-                viverra diam non justo.
-            </p>
-            <a href="work.php" class="link-primary link">about?</a>
-        </div>
-    </div>
-
-    <div class="container-fluid con shadow" id="href2" style="background-image: url(imgs/1.jpg);">
-        <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;">
-        </div>
-        <div class="text-center content content-grid-wide text-light" data--100-bottom="opacity: 1;"
-            data-center="opacity: 0;">
-            <div class="row">
-                <div class="col-6 p-5">
-                    <h1>Kontakt</h1>
-                    <hr class="bg-white border-5 border-top border-white">
-                    <p style="text-align:left; margin-left:15vw;">
-                        <b>Sídlo firmy</b> – NÁZEV<br>
-                        ADRESA<br>
-                        ADRESA<br>
-                        PSČ<br>
-                        <br>
-                        <b>Fakturační adresa</b> – NÁZEV<br>
-                        ADRESA<br>
-                        ADRESA<br>
-                        PSČ<br>
-                        <br>
-                        <b>IČ</b>: 12345678<br>
-                        <b>DIČ</b>: CZ12345678<br>
-                        <br>
-                        <b>Email</b>: MAIL<br>
-                        <b>Kontaktní tel.</b>: 123 456 789<br>
-                        <br>
-                        <b>Bankovní spojení</b> - NÁZEV<br>
-                        <b>BANKA číslo b.ú.</b>: 1122334455/1234,<br>
-                        <b>IBAN</b>: KÓD<br>
-                        <b>SWIFT/BIC</b>: KÓD
-                    </p>
-                </div>
-                <div class="col-6 p-5">
-                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=14.472690224647524%2C48.955921256492026%2C14.476230740547182%2C48.957492261620075&amp;layer=mapnik&amp;marker=48.95670620002507%2C14.474460399999998"
-                        style="height:50vh; width: 40vw"></iframe>
-                </div>
+    <div class="container p-0 m-0">
+        <img src="imgs/0.jpg" class="img-fluid w-100 containerContent" id="bodyImg" />
+        <div class="shape"></div>
+        <div class="shape-sm"></div>
+        <div class="containerContent containerText text-light">
+            <div class="textMask">asdads</div>
+            <div id="content0" class="content">
+                <h2>O nás</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris elementum mauris vitae tortor.
+                    Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Curabitur vitae diam non enim vestibulum interdum.
+                    Maecenas libero. Aliquam erat volutpat. Integer lacinia. Nullam rhoncus aliquam metus. Etiam sapien elit, consequat eget,
+                    tristique non, venenatis quis, ante. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                    nisi ut aliquid ex ea commodi consequatur? Aliquam in lorem sit amet leo accumsan lacinia. Maecenas sollicitudin.
+                    Integer pellentesque quam vel velit. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.
+                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur
+                    aut perferendis doloribus asperiores repellat. Etiam quis quam. Vivamus porttitor turpis ac leo.
+                </p>
+            </div>
+            <div id="content1" class="content">
+                <h2>Služby</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris elementum mauris vitae tortor.
+                    Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Curabitur vitae diam non enim vestibulum interdum.
+                    Maecenas libero. Aliquam erat volutpat. Integer lacinia. Nullam rhoncus aliquam metus. Etiam sapien elit, consequat eget,
+                    tristique non, venenatis quis, ante. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                    nisi ut aliquid ex ea commodi consequatur? Aliquam in lorem sit amet leo accumsan lacinia. Maecenas sollicitudin.
+                    Integer pellentesque quam vel velit. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.
+                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur
+                    aut perferendis doloribus asperiores repellat. Etiam quis quam. Vivamus porttitor turpis ac leo.
+                </p>
+            </div>
+            <div id="content2" class="content">
+                <h2>Reference</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris elementum mauris vitae tortor.
+                    Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Curabitur vitae diam non enim vestibulum interdum.
+                    Maecenas libero. Aliquam erat volutpat. Integer lacinia. Nullam rhoncus aliquam metus. Etiam sapien elit, consequat eget,
+                    tristique non, venenatis quis, ante. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                    nisi ut aliquid ex ea commodi consequatur? Aliquam in lorem sit amet leo accumsan lacinia. Maecenas sollicitudin.
+                    Integer pellentesque quam vel velit. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.
+                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur
+                    aut perferendis doloribus asperiores repellat. Etiam quis quam. Vivamus porttitor turpis ac leo.
+                </p>
+            </div>
+            <div id="content3" class="content">
+                <h2>Kontakt</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris elementum mauris vitae tortor.
+                    Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Curabitur vitae diam non enim vestibulum interdum.
+                    Maecenas libero. Aliquam erat volutpat. Integer lacinia. Nullam rhoncus aliquam metus. Etiam sapien elit, consequat eget,
+                    tristique non, venenatis quis, ante. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                    nisi ut aliquid ex ea commodi consequatur? Aliquam in lorem sit amet leo accumsan lacinia. Maecenas sollicitudin.
+                    Integer pellentesque quam vel velit. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.
+                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur
+                    aut perferendis doloribus asperiores repellat. Etiam quis quam. Vivamus porttitor turpis ac leo.
+                </p>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid bgImage" style="background-image: url(imgs/2.jpg);"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        var currContentId;
+        $(document).ready(function() {
+            $("#content0").animate({
+                opacity: 1
+            }, 500);
+            currContentId = "#content0";
 
-    <div class="container-fluid con shadow" id="href3" style="background-image: url(imgs/0.jpg);">
-        <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;">
-        </div>
-        <div class="text-center content content-grid-wide text-light" data--100-bottom="opacity: 0;"
-            data-center="opacity: 1;">
-            <div class="row">
-                <div class="col-6 p-5">
-                    <img src="imgs/0.jpg" class="img-fluid content-img">
-                </div>
-                <div class="col-6 p-5">
-                    <h1>Pohledávky?</h1>
-                    <hr class="bg-white border-5 border-top border-white">
-                    <form>
-                        <div class="row">
-                            <div class=" col-6">
-                                <input type="text" class="form-control customInput" id="fName" placeholder="Jméno">
-                            </div>
-                            <div class=" col-6">
-                                <input type="text" class="form-control customInput" id="lName" placeholder="Příjmení">
-                            </div>
-                            <div class="mt-2 col-6">
-                                <input type="email" class="form-control customInput" id="email" placeholder="E-mail">
-                            </div>
-                            <div class="mt-2 col-6">
-                                <input type="tel" class="form-control customInput" id="phone" placeholder="Tel. číslo">
-                            </div>
-                            <div class="mt-2">
-                                <label for="date" class="form-label">Požadovaný datum zahájení</label>
-                                <input type="date" class="form-control customInput" id="date">
-                            </div>
-                            <div class="mt-2">
-                                <textarea class="form-control customInput" id="text"
-                                    placeholder="Rozměry, speciální požadavky, ..."></textarea>
-                            </div>
-                            <div class="mt-1">
-                                <label for="files" class="form-label">Přílohy (výkresy, fotky)</label>
-                                <input type="file" class="form-control customInput" id="files">
-                            </div>
-                            <div class="mt-2 col-6">
-                                <label class="form-check-label" for="check">Souhlasím se zpracováním zadaných
-                                    údajů</label>
-                                <input type="checkbox" class="form-check-input mx-2 customInput" id="check">
-                            </div>
-                            <button type="submit" class="btn btn-primary col-6 mt-2 customInput">Odeslat</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+            $("#menu0").click(function() {
+                changeBody("#content0", "0");
+            });
+            $("#menu1").click(function() {
+                changeBody("#content1", "1");
+            });
+            $("#menu2").click(function() {
+                changeBody("#content2", "2");
+            });
+            $("#menu3").click(function() {
+                changeBody("#content3", "1");
+            });
+        });
 
-    <div class="container-fluid con" id="href4" style="background-image: url(imgs/1.jpg);">
-        <div class="filter" data-center-top="opacity: 0;" data-top="opacity: .7;">
-        </div>
-        <div class="text-center content content-grid-wide text-light" data--100-bottom="opacity: 0;"
-            data-center="opacity: 1;">
-            <h1>Galerie</h1>
-            <hr class="bg-white border-5 border-top border-white">
-            <div class="d-flex justify-content-center">
-                <div id="carouselExampleControls" class="carousel slide w-50" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="imgs/0.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imgs/1.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imgs/2.jpg" class="d-block w-100">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-            <a href="gallery.php" class="link">Vstoupit do galerie</a>
-        </div>
-    </div>
+        function changeBody(content, img) {
+            $(currContentId).animate({
+                opacity: 0
+            }, function() {
+                $(this).hide(function(){
+                    $(content).show(function(){
+                        $(this).animate({
+                            opacity: 1
+                        });
+                    });
+                });
+            });
+            currContentId = content;
 
-    <footer class="footer mt-auto py-5 bg-dark text-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 text-center">
-                    <img src="imgs/log.png" class="d-inline-block">
-                </div>
-                <div class="col-4">
-                    <b>Sídlo firmy</b> – NÁZEV<br>
-                    ADRESA<br>
-                    ADRESA<br>
-                    PSČ<br>
-                    <br>
-                    <b>Fakturační adresa</b> – NÁZEV<br>
-                    ADRESA<br>
-                    ADRESA<br>
-                    PSČ<br>
-                    <br>
-                    <b>IČ</b>: 12345678<br>
-                    <b>DIČ</b>: CZ12345678<br>
-                    <br>
-                    <b>Email</b>: MAIL<br>
-                    <b>Kontaktní tel.</b>: 123 456 789<br>
-                </div>
-                <div class="col-4 text-center">
-                    <a href="#" class="link-primary link">panel link</a><br>
-                    <a href="#" class="link-primary link">panel link</a><br>
-                    <a href="#" class="link-primary link">panel link</a><br>
-                    <a href="#" class="link-primary link">panel link</a><br>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="videoOver"></div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
-
-    <script type="text/javascript" src="skrollr/dist/skrollr.min.js"></script>
-    <script type="text/javascript">
-    var s = skrollr.init();
+            var image = $("#bodyImg");
+            image.fadeOut('slow', function() {
+                image.attr('src', 'imgs/' + img + '.jpg');
+                image.fadeIn('fast');
+            });
+        }
     </script>
 </body>
 
